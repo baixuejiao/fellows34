@@ -76,7 +76,8 @@
 
         <!-- 段落 -->
         <p>这是一个P标签</p>
-        <p>淘宝网 - 亚洲较大的网上交易平台，提供各类服饰、美容、家居、数码、话费/点卡充值… 数亿优质商品，同时提供担保交易(先收货后付款)等安全交易保障服务，并由商家提供退货承诺、破损补寄等消费者保障服务，让你安心享受网上购物乐趣！</p>
+        <!-- strong 加粗 -->
+        <p> <strong> 淘宝网 </strong> - 亚洲较大的网上交易平台，提供各类服饰、美容、家居、数码、话费/点卡充值… 数亿优质商品，同时提供担保交易(先收货后付款)等安全交易保障服务，并由商家提供退货承诺、破损补寄等消费者保障服务，让你安心享受网上购物乐趣！</p>
         <p>淘宝网 - 亚洲较大的网上交易平台，提供各类服饰、美容、家居、数码、话费/点卡充值… 数亿优质商品，同时提供担保交易(先收货后付款)等安全交易保障服务，并由商家提供退货承诺、破损补寄等消费者保障服务，让你安心享受网上购物乐趣！</p>
 
         <!--
@@ -84,5 +85,52 @@
             块级元素 一个元素占一行 p div
             行级块元素 img
         -->
+
+        <!--
+            表单
+            action 提交信息的地址
+        -->
+        <form action="">
+            <!-- 输入框 普通文本类型 -->
+            <span>姓名</span><input type="text"> <br/>
+            <!-- password 密码类型的输入框 -->
+            <span>密码</span><input type="password"> <br/>
+            <!-- radio 单选框 -->
+            <span>水果</span> 
+            <!-- label的for属性的值 跟input的id值相等  -->
+            <label for="apple">苹果</label>
+            <input type="radio" name="fruit" id="apple">
+            <label for="banana">香蕉</label>
+            <input type="radio"  name="fruit" id="banana">
+            <label for="peach">桃子</label>
+            <input type="radio"  name="fruit" id="peach"><br/>
+            <!-- 复选框 checkbox-->
+            <input type="checkbox" name="sport"> 足球
+            <input type="checkbox" name="sport"> 篮球
+            <br/>
+            <!-- 下拉列表 -->
+            <select name="" id="">
+                <option value="">北京</option>
+                <option value="">上海</option>
+                <option value="">深圳</option>
+            </select>
+            <!-- 文本域 -->
+            <textarea name="" id="" cols="10" rows="10"></textarea>
+            <button>按钮</button>
+        </form>
+
+        <!-- tabel表格 border设置表格的边框 -->
+        <table border="2">
+            <!-- tr 表格的行 -->
+            <tr>
+                <!-- td 表格的列 -->
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </table>
     </body>
 </html>
