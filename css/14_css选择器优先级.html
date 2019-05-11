@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        /* id > class > 标签 */
+        /* 
+            相同属性按照选择器的优先级展示
+            不同属性叠加展示
+            相同属性的样式 写在后面的会把前面的覆盖
+        */
+        /* 
+            选择器的权重
+
+            内联 1000
+            id 100
+            class 10
+            标签 1
+        */
+        /* id选择器  100 */
+        #div1{
+            background: aqua;
+        }
+        /* 标签选择器权重 1 */
+        div{
+            width: 200px;
+            height: 200px;
+            font-size: 30px;
+            background: greenyellow;
+        }
+        /* class选择器权重 10 */
+        .wrap{
+            color: purple;
+            background: red;
+        }
+
+        /* ul li{
+           color: aqua 
+        } */
+
+        #main{
+            color: green;
+        }
+
+        /* li{
+            color: red;
+        } */
+
+        #main li{
+            color: blue;
+        }
+        
+        .content>li.list{
+            font-size: 40px;
+            color: red;
+        } 
+    </style>
+</head>
+<body>
+    <!-- 内联样式优先级最高 高于内部样式和外部样式 -->
+    <!-- 内联的权重1000 -->
+    <!-- <div style="width: 100px; height: 100px; background: red"></div> -->
+
+    <div id="div1" class="wrap">
+        div111111
+    </div>
+
+    <ul id="main" class="content">
+        <li class="list">1234567</li>
+    </ul>
+
+
+</body>
+</html>

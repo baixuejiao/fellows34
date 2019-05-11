@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>外边距合并</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 3000px;
+        }
+        #div1{
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            background: #ff8099;
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            background: paleturquoise;
+        }
+
+
+        #div3{
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+            background: #ff8099;
+            /* position: relative; */
+            /* border: 1px solid transparent; */
+            /* overflow: hidden; */
+            /* float: left; */
+        }
+
+        #div4{
+            width: 50px;
+            height: 50px;
+            margin-top: 20px;
+            /* position: absolute; */
+            background: palegreen;
+            float: left;
+        }
+
+        /* 嵌套的元素 外边距合并解决办法
+            1.父元素加边框
+            2.父元素加 overflow:hidden
+            3.父元素或子元素定位 absolute
+            4.父元素或子元素浮动
+        */
+    </style>
+</head>
+<body>
+    <!-- <div id="div1">div1</div>
+    <div id="div2">div2</div> -->
+
+
+    <div id="div3">
+        <div id="div4">div4</div>
+    </div>
+</body>
+</html>

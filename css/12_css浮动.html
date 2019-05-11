@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浮动</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #div1{
+            width: 300px;
+            /* height: 300px; */
+            background: pink;
+            /* overflow:hidden; */
+        }
+
+        #div2{
+            width: 100px;
+            height: 100px;
+            background: aqua;
+            /* 
+                float 浮动
+                left right
+                元素浮动以后 空间释放
+            */
+            float: left;
+        }
+        #div3{
+            width: 100px;
+            height: 100px;
+            background: greenyellow;
+            float: left;
+        }
+        #div4{
+            /* 清除浮动
+                left right both
+            */
+            clear: both;
+        }
+
+        .clearfix{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /* 浮动的元素塌陷问题
+            1.父元素设置高度
+            2.父元素设置overflow:hidden
+            3.新增一个子元素并且设置清除浮动
+            4.伪元素 clearfix
+        */
+    </style>
+</head>
+<body>  
+    <div id="div1" class="clearfix">
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <!-- <div id="div4"></div> -->
+    </div>
+</body>
+</html>
