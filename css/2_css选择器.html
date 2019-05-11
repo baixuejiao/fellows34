@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            height: 2000px;;
+        }
+        /* css注释 */
+        /* id选择器 （#id名称） */
+        #div1{
+            width: 100px;
+            height: 100px;
+            background: #ff8907;
+        }
+        /* 标签选择器 （标签的名称） */
+        div{
+            color: red;
+        }
+
+        /* 类选择器/class选择器 (.类名) */
+        .div2{
+            color: #000;
+        }
+
+        /* 后代选择器（选中子元素 孙子元素。。。。） */
+        p span{
+            color: aquamarine;
+        }
+
+        /* 子代选择器 （亲儿子） */  
+        p>span{
+            background: #ff8907;
+        }
+
+        /* 分组选择器 （多个标签并列中间用'，'分割） */
+        li,#wrap{
+            color: blue;
+        }
+
+        /* 伪类选择器 (:) */
+        #link:hover{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- html注释 -->
+    <div id="div1">div1</div>
+    <div>div2</div>
+    <div>div3</div>
+
+    <div class="div2">div4</div>
+    <div class="div2">div5</div>
+
+    <p>
+        p1
+        <span>span1</span>
+        <a href="#">
+            超链接
+            <span>span2</span>
+        </a>
+        <span>span3</span>
+    </p>
+
+    <ul>
+        <li>li1</li>
+        <li>li2</li>
+        <li>li3</li>
+    </ul>
+    <div id="wrap">div6</div>
+
+    <a href="" id="link">天猫</a>
+
+</body>
+</html>
