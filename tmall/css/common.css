@@ -21,6 +21,8 @@ body{
     background: #f2f2f2;
 }
 
+
+
 .nav-wrapper{
     width: 1230px;
     height: 32px;
@@ -50,12 +52,19 @@ body{
 }
 .nav-menu>li{
     float: left;
+    position: relative;
+}
+.nav-menu-list:hover{
+    background: #fff;
 }
 .nav-menu>li>a{
+    display: inline-block;
+
     /* float: left; */
     padding: 0 10px;
     font-size: 12px;
     color: #999;
+    position: relative;
 }
 .nav-menu>li>a:hover{
     color: #ff0036;
@@ -70,6 +79,7 @@ body{
     border-bottom-color: transparent;
     border-left-color: transparent;
     position: relative;
+    /* right: 1px; */
     top: 14px;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
@@ -77,4 +87,69 @@ body{
 .nav-menu-list>a:hover .nav-menu-arrow{
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+.nav-menu-inner{
+    display: none;
+    width: 100px;
+    border: 1px solid #eee;
+    border-top: none;
+    background: #fff;
+    position: absolute;
+    top: 32px;
+    left: 0;
+}
+.nav-menu-inner>li{
+    padding: 0 10px;
+}
+.nav-menu-inner a{
+    color: #666;
+}
+.nav-menu-inner a:hover{
+    text-decoration: underline;
+    color: #ff0036;
+}
+.nav-menu-list:hover .nav-menu-inner{
+    display: block;
+}
+
+ /* qr */
+.qr{
+    display: none;
+    width: 175px;
+    height: 227px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 28px;
+    left: -67%;
+    box-shadow: 2px 2px 5px 0 #aaa;
+}
+.qr>.qr-inner{
+    width: 175px;
+    height: 175px;
+    background: url('http://img.alicdn.com/tfs/TB1vJ0POwTqK1RjSZPhXXXfOFXa-175-215.png') 0 0 no-repeat;
+}
+.qr>img{
+    /* margin: 0 auto; */
+}
+.qr>.qr-arrow{
+    border: 6px solid #fff;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    top: -9px;
+    left: 50%;
+}
+
+.nav-menu-phone:hover>.qr{
+    display: block;
+}
+
+.nav-menu-line{
+    height: 20px;
+    border-right: 1px solid #ccc;
+    position: relative;
+    top: 6px;
 }
