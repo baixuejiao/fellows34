@@ -48,12 +48,12 @@
 }
 #search-list{
     margin-top: 4px;
-    margin-left: -5px;
+    margin-left: -10px;
     font-size: 14px;
 }
 #search-list>a{
     float: left;
-    padding: 0 5px;
+    padding: 0 10px;
     border-right: 1px solid #999;
     color: #999;
 }
@@ -114,11 +114,13 @@
     width: 200px;
     position: absolute;
     top: -36px;
+    z-index: 3;
 }
 #menu-title{
     /* width: 100%; */
     height: 36px;
     padding: 0 10px;
+    font-size: 14px;
     line-height: 36px;
     color: #fff;
     background: #ff0036;
@@ -169,12 +171,12 @@
 }
 .menu-inner{
     display: none;
-   width: 852px;
-   height: 500px;
-   position: absolute;
-   top: 37px;
-   left: 200px;
-   background: #fff;
+    width: 852px;
+    height: 500px;
+    position: absolute;
+    top: 37px;
+    left: 200px;
+    background: #fff;
 }
 .menu-inner-left{
     float: left;
@@ -183,7 +185,9 @@
     margin: 19px 30px;
     background: #fff;
 }
-
+.menu-left-list{
+    padding-bottom: 5px;
+}
 .menu-left-list .menu-left-title{
     font-size: 14px;
     color: #333;
@@ -207,6 +211,7 @@
     border-bottom: 1px dashed #999;
 }
 .menu-left-list>div>a{
+    float: left;
     margin-right: 13px;
     font-size: 14px;
     color: #666;
@@ -220,4 +225,52 @@
     height: 480px;
     padding: 10px;
     background: #fafafa;
+}
+.menu-inner-right>a{
+    float: left;
+    width: 73px;
+    height: 37px;
+    padding: 5px 10px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    background: #fff;
+}
+.menu-inner-right>a>img{
+    width: 100%;
+}
+/* 轮播图 */
+#slider-main{
+    width: 100%;
+    /* width: 1230px; */
+    height: 500px;
+    position: relative;
+    z-index: 2;
+}
+#slider-main-img{
+    width: 100%;
+    height: 100%;
+}
+#slider-main-img>img{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#slider-main-img>img.active{
+    display: block;
+}
+#slider-main-pointer{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -105px;
+}
+#slider-main-pointer>li{
+    float: left;
+    width: 25px;
+    height: 5px;
+    margin: 0 5px;
+    background: rgba(0,0,0,0.3);
+}
+#slider-main-pointer>li.active{
+    background: rgba(255,255,255,0.6);
 }
