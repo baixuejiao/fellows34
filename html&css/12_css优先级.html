@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 
+            id > class > 标签
+            优先级相同 相同属性后面会覆盖前面
+        
+        */
+
+        /* 
+            针对同一个元素 多个选择器的不同属性会叠加
+        */
+        div{
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+        /* #wrap{
+            background: red;
+        } */
+        .inner{
+            color: aqua;
+            background: green;
+        }
+        .main{
+            font-size: 60px;
+            background: pink;
+        }
+        
+        /* 
+            权重
+            !important 
+            style 1000
+            id 100
+            class 10
+            标签 1
+        */
+        /* 101 */
+        /* #ul1>li{
+            color: red!important;
+        } */
+
+        /* 10 + 100 = 110 */
+        /* .list#list1{
+            color: blue;
+        }
+        li.list{
+            color: green;
+        } */
+        .list#list1{
+            background: blue;
+        }
+
+        ul .list{
+
+        }
+        .list{
+
+        }
+
+    
+    </style>
+</head>
+<body>
+    <!-- <div style="width: 100px;height: 100px;background: red;"></div> -->
+    <div id="wrap" class="inner main"> 123123</div>
+
+
+    <ul id="ul1" class="content">
+        <li id="list1" class="list">11</li>
+        <li>22</li>
+        <li>33</li>
+    </ul>
+
+    <p class="list"></p>
+
+
+</body>
+</html>

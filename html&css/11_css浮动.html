@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        /* 
+            清除浮动：
+            clear left right both
+        
+        */
+        #content{
+            /* height: 100px; */
+            background: aqua;
+            /* overflow: hidden; */
+            
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            background: red;
+            /* 浮动
+                left/right
+            */
+            float: left;
+        }
+        /* 
+            1.父元素设置高度
+            2.父元素 溢出隐藏
+            3.给父容器新增一个空的子元素 子元素清除浮动
+            4.clearfix 伪元素清除浮动
+        */
+
+        #wrap{
+            display: none;
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            border: 1px solid #000;
+        }
+        .clear{
+            clear: both;
+        }
+
+        /* 
+            ::after 伪元素
+        */
+
+
+        span{
+            width: 200px;
+            height: 200px;
+            background: aqua;
+            /* 
+                block
+                inline
+                inline-block
+                none
+            */
+            display: inline-block;
+        }
+
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <div id="content" class="clearfix">
+        <div class="inner">1</div>
+        <div class="inner">2</div>
+    </div>
+
+    <div id="wrap"></div><span>span</span><a href="#">aaa</a>
+</body>
+</html>

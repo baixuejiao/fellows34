@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #div1{
+            width: 200px;
+            height: 300px;
+            margin-bottom: 20px;
+            background: red;
+        }
+        #div2{
+            width: 200px;
+            height: 300px;
+            margin-top: 30px;
+            background: aqua;
+        }
+
+        #div3{
+            margin-top: 80px;
+            width: 400px;
+            height: 400px;
+            background: pink;
+            /* float: left; */
+            /* position: absolute; */
+            /* 溢出隐藏 */
+            /* overflow: hidden; */
+            /* border: 1px solid transparent; */
+        }
+        #div4{
+            width: 200px;
+            height: 200px;
+            margin-top: 50px;
+            background: aqua;
+            position: absolute;
+            /* float: left; */
+        }
+        /* 
+            嵌套的元素外边距合并
+            1.给父元素加border
+            2.父元素 溢出隐藏
+            3.父元素或子元素 浮动 float
+            4.父元素或子元素定位 position: absolute(绝对定位)
+        */
+    
+    
+    </style>
+</head>
+<body>
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+
+    <!-- <div id="div3">
+        <div id="div4">div4</div>
+    </div> -->
+</body>
+</html>

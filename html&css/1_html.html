@@ -1,0 +1,148 @@
+<!-- 声明文档类型 html5  -->
+<!DOCTYPE html>
+<!-- 根元素 -->
+<html lang="en">
+<!-- 头部标签 网页的基本信息 -->
+<head>
+    <!-- 定义字符编码 -->
+    <meta charset="UTF-8">
+    <!-- 响应式 移动端开发 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ie浏览器 ie8以上支持-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 关键字 搜索引擎的关键字-->
+    <meta name="keywords" content="购物 鲜花">
+    <!-- 搜索引擎使用 展示网页的介绍 -->
+    <meta name="description" content="">
+    <!-- 页面标题 -->
+    <title>页面标题</title>
+</head>
+<body style="height: 2000px;">
+    标签
+    <!-- 标题 h1~h6 -->
+    <h1>标题1</h1>
+    <h2>标题2</h2>
+    <h3>标题3</h3>
+    <h4>标题4</h4>
+    <h5>标题5</h5>
+    <h6>标题6</h6>
+
+    <!-- p表示 段落 -->
+    <p>段落</p>
+    <!-- i 斜体 （iconfont字体图标） -->
+    <p><i>淘宝网</i> - 亚洲较大的网上交易平台，提供各类服饰、美容、家居、数码、话费/点卡充值… 数亿优质商品，同时提供担保交易(先收货后付款)等安全交易保障服务，并由商家提供退货承诺、破损补寄等消费者保障服务，让你安心享受网上购物乐趣！</p>
+    <!-- br 强制换行 -->
+    <!-- strong 加粗 -->
+    <p><strong>淘宝网</strong> - 亚洲较大的网上交易平台，提供各类服饰、美容、家居、数码、话费/点卡充值… <br/>数亿优质商品，同时提供担保交易(先收货后付款)等安全交易保障服务，并由商家提供退货承诺、破损补寄等消费者保障服务，让你安心享受网上购物乐趣！</p>
+
+    <!-- 无序列表 -->
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+    </ul>
+
+    <!-- 有序列表 -->
+    <ol>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+    </ol>
+
+    <!-- 图片 src图片的地址 alt图片的说明
+        .png 透明图片
+        .jpg 不透明的
+        .jpeg 不透明的
+        .gif 动图
+        图片地址 相对路径、绝对路径
+    -->
+    <img src="../images/111.jpeg" alt="图片1">
+
+    <!-- 超链接  href跳转链接 target="_blank" 新窗口打开页面-->
+    <a href="https://baidu.com" target="_blank">百度</a>
+    <a href="#"></a>
+
+    <!-- 布局 div+css -->
+    <div>div布局标签
+        <a href=""></a>
+        <span></span>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div>
+        <span></span>
+    </div>
+    <span>文字</span>
+    <span>span1</span>
+    <span>span2</span>
+
+    <!-- form 表单
+        action 表单提交时的动作 表单信息提交的地址
+    -->
+    <form action="">
+        <!-- 文本框 -->
+        姓名：<input type="text" name="name" placeholder="提示文案"> <br/>
+        <!-- 密码框 -->
+        密码：<input type="password" name="pwd" placeholder="6位密码"> <br/>
+
+        <!-- 单选框 name 表示一组-->
+        苹果<input type="radio" name="fruit">
+        香蕉<input type="radio" name="fruit">
+        桃子<input type="radio" name="fruit">
+        <br/>
+
+        <!-- label 与表单填写项关联 通过for属性-->
+        <label for="apple">苹果</label><input type="radio" name="fruit" id="apple">
+        <label for="banana">香蕉</label><input type="radio" name="fruit" id="banana">
+        <label for="peach">桃子</label><input type="radio" name="fruit" id="peach">
+        <br/>
+
+        <!-- 复选框 -->
+        <input type="checkbox" name="11"> 苹果
+        <input type="checkbox" name="11"> 香蕉
+
+        <!-- 下拉框 -->
+        <select name="" id="">
+            <option value="">哈尔滨</option>
+            <option value="">齐齐哈尔</option>
+            <option value="">牡丹江</option>
+        </select>
+
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <!-- 按钮 -->
+        <button>按钮</button>
+
+    </form>
+
+    <!-- 表格 border边框
+        tr 行
+        rd 列    
+    -->
+    <table border="1">
+        <tr>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <!-- 
+        行级元素：
+            多个元素占一行 不可以设置宽高
+            嵌套行级元素
+        块级元素: 
+            单个元素占一行 可以设置宽高
+            嵌套块级元素 行级元素
+        行级块元素：
+            多个占一行 可以设置宽高
+    -->
+</body>
+</html>

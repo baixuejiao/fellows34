@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 2000px;;
+        }
+        /* 
+            定位 position
+            relative 相对定位 相对于元素本身定位 定位后空间不释放
+            absolute 绝对定位 定位后空间释放 相对于最近的已定位的祖先元素去定位 body
+            fixed 固定定位 定位后空间释放 相对于浏览器窗口定位
+        
+        */
+        #div1{
+            width: 200px;
+            height: 200px;
+            background: red;
+            position: absolute;
+            top: 20px;
+            left: 40px;
+        }
+        #div2{
+            width: 100%;
+            height: 200px;
+            background: aquamarine;
+            position: fixed;
+            top: 0;
+            left: 0;
+            /* 层级 */
+            z-index: 3;
+        }
+
+        #div3{
+            width: 400px;
+            height: 400px;
+            margin-top: 100px;
+            border: 1px solid palevioletred;
+            /* position: relative; */
+        }
+        #wrapper{
+            width: 500px;
+            height: 500px;
+            margin-top: 50px;
+            border: 1px solid black;
+            overflow: hidden;
+            position: relative;
+            z-index: 99;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="div3">
+            <div id="div1">1</div>
+        </div>
+    </div>
+    <div id="div2">2</div>
+
+    
+</body>
+</html>
